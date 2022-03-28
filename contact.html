@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./common/style/reset.css" />
+    <link rel="stylesheet" href="./common/style/common.css" />
+    <link rel="stylesheet" href="./common/style/contact.css" />
+    <title>九州機械開発 株式会社</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex">
+        <a class="header_left flex">
+          <img
+            class="logo"
+            src="./common/img/kmd_logo.png"
+            alt="九州機械開発株式会社のロゴマーク"
+            width="85px"
+            height="40px"
+          />
+          <h1 class="header_title">九州機械開発㍿</h1>
+        </a>
+        <nav class="header_right">
+          <ul class="header_nav flex">
+            <li class="header_list"><a href="./index.html">ホーム</a></li>
+            <li class="header_list"><a href="./service.html">事業内容</a></li>
+            <li class="header_list"><a href="./news.html">新着情報</a></li>
+            <li class="header_list"><a href="./company.html">会社概要</a></li>
+            <li class="header_list">
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li class="header_list">
+              <button class="gradation" onclick="location.href='./repair.html'">
+                <span class="large_text">特自検</span>はこちらから
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item">
+              <a href="./index.html">ホーム</a></li>
+            <li class="global-nav__item">
+              <a href="./service.html">事業内容</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="./news.html">新着情報</a></li>
+            <li class="global-nav__item">
+              <a href="./company.html">会社概要</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="./repair.html">特定自主検査</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <div class="top_wrapper">
+          <h2 class="page_title">お問い合わせ</h2>
+        </div>
+        <div class="wrapper">
+          <section id="contact_form">
+            <form class="contact_form" action="index.html" method="post">
+              <div class="contact_form_item">
+                <label class="contact_form_item_name" for="company">会社名</label>
+                <input type="text" id="company" class="contact_form_item_input">
+              </div>
+              <div class="contact_form_item">
+                <label class="contact_form_item_name" for="name">お名前<span class="contact_form_item_required">*</span></label>
+                <input type="text" id="name" class="contact_form_item_input" required>
+              </div>
+              <div class="contact_form_item">
+                <label class="contact_form_item_name" for="email">メールアドレス<span class="contact_form_item_required">*</span></label>
+                <input type="email" id="email" class="contact_form_item_input" required>
+              </div>
+              <div class="contact_form_item">
+                <label class="contact_form_item_name" for="comment">お問い合わせ内容<span class="contact_form_item-_equired">*</span></label>
+                <textarea id="comment" rows="8" cols="80" class="contact_form_item_textarea" required></textarea>
+              </div>
+              <button class="btn" onclick="location.href='./thanks.html'">送信する</button>
+            </form>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="flex">
+          <small class="copy">&copy; Kyushu Machinery Development.</small>
+          <ul class="footer_nav flex">
+            <li class="footer_list"><a href="./index.html">ホーム</a></li>
+            <li class="footer_list"><a href="./service.html">事業内容</a></li>
+            <li class="footer_list"><a href="./news.html">新着情報</a></li>
+            <li class="footer_list"><a href="./company.html">会社概要</a></li>
+            <li class="footer_list">
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="common/js/main.js"></script>
+  </body>
+</html>

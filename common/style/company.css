@@ -1,0 +1,32 @@
+.company_information {
+  width: 80%;
+  margin: 100px auto 80px;
+  }
+  
+  .company_information th,
+  .company_information td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  }
+  
+  .company_information th {
+  font-weight: bold;
+  background-color: #dedede; 
+  }
+  .map {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    tbody {
+      display: block;
+      text-align: center;
+    }
+    .company_information,
+    .company_information tr,
+    .company_information th,
+    .company_information td {
+      display: block;
+    }
+  }

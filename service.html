@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./common/style/reset.css" />
+    <link rel="stylesheet" href="./common/style/common.css" />
+    <link rel="stylesheet" href="./common/style/service.css" />
+    <title>九州機械開発 株式会社</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex">
+        <a class="header_left flex">
+          <img
+            class="logo"
+            src="./common/img/kmd_logo.png"
+            alt="九州機械開発株式会社のロゴマーク"
+            width="85px"
+            height="40px"
+          />
+          <h1 class="header_title">九州機械開発㍿</h1>
+        </a>
+        <nav class="header_right">
+          <ul class="header_nav flex">
+            <li class="header_list"><a href="./index.html">ホーム</a></li>
+            <li class="header_list"><a href="#">事業内容</a></li>
+            <li class="header_list"><a href="./news.html">新着情報</a></li>
+            <li class="header_list"><a href="./company.html">会社概要</a></li>
+            <li class="header_list">
+              <a href="./contact.html">お問い合わせ</a>
+            </li>
+            <li class="header_list">
+              <button class="gradation" onclick="location.href='./repair.html'">
+                <span class="large_text">特自検</span>はこちらから
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item">
+              <a href="./index.html">ホーム</a></li>
+            <li class="global-nav__item">
+              <a href="#">事業内容</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="./news.html">新着情報</a></li>
+            <li class="global-nav__item">
+              <a href="./company.html">会社概要</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="./repair.html">特定自主検査</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="./contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <div class="top_wrapper">
+          <h2 class="page_title">事業内容</h2>
+        </div>
+        <div class="wrapper">
+          <section class="service_page_contents">
+            <div class="service_detail flex">
+                <img
+                  class="service_detail_image"
+                  src="./common/img/service_bobcat.png"
+                  alt=""
+                />
+              <div class="service_detail_text">
+                <h3 class="service_detail_title">建設機械販売</h3>
+                <p class="service_detail_sentence">
+                  九州機械開発は鹿児島県において、ボブキャット販売代理店・指定サービス工場として主に、畜産向けスキッドステアローダーを中心に取り扱っております。現在では、日立建機日本株式会社のホイールローダーの販売も行っております。またお客様のご要望に合わせた仕様に合わせたカスタマイズや、アタッチメント等もお届けしています。また中古機械買取、新車購入に伴う下取りも行っております。
+                </p>
+                <p class="service_detail_sentence">
+                  『地域密着』を徹底し、新車から機械の寿命までお客様にご満足いただけるサービスを提供いたします。
+                </p>
+              </div>
+            </div>
+            <div class="service_detail flex reverse">
+                <img
+                  class="service_detail_image repair_image"
+                  src="./common/img/service_repair.png"
+                  alt=""
+                />
+              <div class="service_detail_text">
+                <h3 class="service_detail_title">建機メンテナンス修理</h3>
+                <p class="service_detail_sentence">
+                  九州機械開発では建設機械サービス・メンテナンスにおいて長年の技術の蓄積があり、確かな提案とサービスを保証いたします。
+                  お客様の機械を止めない事。最大限のコストパフォーマンスを生み出す事をお客様と一緒に考えます。
+                </p>
+                <p class="service_detail_sentence">
+                  日々のメンテナンスから万一の故障時における素早い対応、工場からフィールドサービスまでお客様の全てをバックアップいたします。
+                </p>
+              </div>
+            </div>
+            <div class="service_detail flex">
+                <img
+                  class="service_detail_image"
+                  src="./common/img/service_test.png"
+                  alt=""
+                />
+              <div class="service_detail_text">
+                <h3 class="service_detail_title">特定自主検査・各種点検</h3>
+                <p class="service_detail_sentence">
+                  人間も定期健診が必要なように、日頃からのこまめな点検で大きな出費や故障を未然に防ぐことができます。当社では経験豊富なプロの整備士がお客様の経費削減に貢献させて頂きます。
+                </p>
+                <p class="service_detail_sentence">
+                  また安心してフォークリフトをお使い頂けるように、万全の技術と設備でお客様の大切な車輌を保守し、点検・整備・検査を行っております。
+                </p>
+                <button class="btn" onclick="location.href='./repair.html'">特自検はこちらから</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section id="contact">
+          <div class="wrapper">
+            <h2 class="contents_title">
+              <span class="contents_title_inner">お問い合わせ</span>
+            </h2>
+            <p class="contact_text">
+              お仕事のご依頼やお見積もり等はお問い合わせにて承っております。
+            </p>
+            <button
+              class="btn contact_btn"
+              onclick="location.href='./contact.html'"
+            >
+              お問い合わせ
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="flex">
+          <small class="copy">&copy; Kyushu Machinery Development.</small>
+          <ul class="footer_nav flex">
+            <li class="footer_list"><a href="./index.html">ホーム</a></li>
+            <li class="footer_list"><a href="#">事業内容</a></li>
+            <li class="footer_list"><a href="./news.html">新着情報</a></li>
+            <li class="footer_list"><a href="./company.html">会社概要</a></li>
+            <li class="footer_list">
+              <a href="./contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="common/js/main.js"></script>
+  </body>
+</html>
+

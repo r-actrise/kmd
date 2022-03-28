@@ -1,0 +1,201 @@
+/* -----------------------------
+アイキャッチ 
+--------------------------------*/
+.eye_catch {
+  width: 100%;
+}
+.eye_catch_img {
+  width: 100%;
+  height: 50vh;
+  vertical-align: top;
+}
+
+#kmd_feeling {
+  background: #192166;
+  color: #ffffff;
+  padding: 60px 0;
+}
+.feeling_title {
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* ------------------------------
+事業内容
+--------------------------------- */
+#service {
+  padding-top: 80px;
+}
+.service_contents {
+  margin-top: 60px;
+}
+#service .flex {
+  align-items: stretch;
+}
+
+
+/* カード */
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  width: 32%;
+}
+.card_img_wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+.card_img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.card_body {
+  padding: 15px;
+}
+.card_body > *:last-child {
+  margin-bottom: 0;
+}
+.card_title {
+  margin-bottom: 5px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.view_detail {
+  display: block;
+  margin: 60px auto 0;
+}
+
+/* -------------------------------
+新着情報
+---------------------------------- */
+#news {
+  padding-top: 120px;
+}
+.news_lists {
+  width: 80%;
+  margin: 60px auto 0;
+}
+.news_list {
+  border-bottom:1px dotted #000;
+  list-style:none;
+  padding: 10px 0;
+  width: 100%;
+}
+.news_list_inner {
+  color:#000;
+  text-decoration:none;
+  display: block;
+  position: relative;
+  transition: .25s;
+}
+.date {
+  display: inline-block;
+  font-weight: bold;
+  margin-right:40px;
+}
+.new {
+  color:#303030;
+  display: inline-block;
+  text-decoration: underline;
+}
+.most_new.new::after {
+  content:"NEW";
+  color: #d10606;
+  border: 1px solid #d10606;
+  padding: 4px 8px;
+  display: inline-block;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* -----------------------------
+会社概要・見積依頼 
+-------------------------------*/
+#company {
+  width: 100%;
+  font-size: 1.75rem;
+  padding: 120px 0;
+}
+.company_contents {
+  background-color: #192166;
+}
+.company_contents,
+.quotation {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .25s;
+  width: 50%;
+  padding: 80px 0;
+}
+.quotation {
+  background-color: #12764A;
+}
+
+
+/* ---------------------------
+タブレット用レスポンシブ 
+-----------------------------*/
+@media screen and (max-width: 1024px) {
+
+  /* -------------------------
+  カード 
+  ---------------------------*/
+  .card_title {
+    font-size: 1rem;
+  }
+
+  .most_new.new::after {
+    display: inline-block;
+  }
+
+}
+
+
+/*--------------------------
+SP用レスポンシブ 
+-----------------------------*/
+@media screen and (max-width: 767px) {
+
+  /* ---------------------------------
+  ヘッダー 
+  -----------------------------------*/
+  .logo {
+    width: 60px;
+    height: 32px;
+  }
+  .header_title {
+    font-size: 1.5rem;
+  }
+  .eye_catch_img {
+    height: 60vh;
+  }
+
+  /* ----------------------------------
+  事業内容 
+  ------------------------------------*/
+  #service .flex {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* -----------------------------------
+  新着情報 
+  --------------------------------------*/
+  .news_lists {
+    width: 100%;
+  }
+  .most_new.new::after {
+    display: none;
+  }
+}

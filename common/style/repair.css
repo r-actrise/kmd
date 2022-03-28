@@ -1,0 +1,198 @@
+/* ----------------------------------
+共有 
+-----------------------------------*/
+.heading {
+  padding-bottom: 5px;
+  border-bottom: 4px solid #192166;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* ----------------------------------
+特定自主検査とは 
+-----------------------------------*/
+.about_repair {
+  margin-top: 80px;
+}
+.official_page_btn {
+  display: block;
+  width: 60%;
+  margin: 40px auto 0;
+}
+
+/*-----------------------------------
+検査資格 
+------------------------------------*/
+.license {
+  margin-top: 80px;
+}
+.license_inner.flex {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.license_image {
+  width: 40%;
+  margin-right: 10%;
+}
+.license_list_title {
+  width: 60%;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.license_text_lists {
+  list-style: inside;
+}
+/* ----------------------------------
+検査資格 
+-----------------------------------*/
+.sticker {
+  margin-top: 80px;
+}
+.sticker_inner {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sticker_image {
+  width: 40%;
+  margin-right: 10%;
+}
+
+/*------------------------------------
+検査制度
+------------------------------------ */
+.inspection_system {
+  margin-top: 80px;
+}
+.inspection_machine {
+  margin-top: 40px;
+}
+.inspection_heading {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #0278C1;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #0278C1;
+}
+.inspection_table {
+  border: 1px solid #ddd;
+}
+.inspection_table_inner {
+  width: 100%;
+}
+.inspection_table_header {
+  width: 20%;
+  padding: 15px;
+  background-color: #efefef;
+  border-bottom: 1px solid #dddddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.inspection_table_text {
+  padding: 15px;
+  border-bottom: 1px solid #dddddd;
+}
+.inspection_table_row:last-child .inspection_table_header,
+.inspection_table_row:last-child .inspection_table_text {
+  border-bottom-width: 0;
+}
+
+/* -------------------------------
+対象の機械と検査料 
+---------------------------------*/
+.price {
+  margin-top: 80px;
+}
+.price_table {
+  border: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+.price_table:last-child {
+  margin-bottom: 60px;
+}
+.price_table_inner {
+  width: 100%;
+}
+.price_table_header {
+  width: 80%;
+  padding: 15px;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  text-align: left;
+}
+.price_table_price {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #dddddd;
+}
+.price_table_row:last-child .price_table_header,
+.price_table_row:last-child .price_table_price {
+  border-bottom-width: 0;
+}
+.machine_name {
+  padding: 15px;
+  text-align: center;
+  background-color: #efefef;
+  border-bottom: 1px solid #dddddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/*--------------------------------------
+SP用レスポンシブ 
+-------------------------------------*/
+@media screen and (max-width: 768px) {
+
+  .inspection_table_md_scroll {
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+  .inspection_table_md_scroll .inspection_table_header,
+  .inspection_table_md_scroll .inspection_table_text {
+    white-space: nowrap;
+  }
+  .inspection_table_md_scroll .inspection_table_text {
+    border-right: 1px solid #dddddd;
+  }
+  .price_table_md_scroll {
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+  .price_table_md_scroll .price_table_header,
+  .price_table_md_scroll .price_table_price,
+  .machine_name {
+    white-space: nowrap;
+  }
+  .price_table_md_scroll .price_table_price {
+    border-right: 1px solid #dddddd;
+  }
+  .price_table {
+    font-size: .875rem;
+  }
+  .heading {
+    font-size: 1.25rem;
+  }
+  .official_page_btn {
+    width: 100%;
+    font-size: .875rem;
+  }
+  .license_inner.flex {
+    display: block;
+  }
+  .license_image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .sticker_inner.flex {
+    display: block;
+  }
+  .sticker_image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .inspection_heading {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+  }
+}

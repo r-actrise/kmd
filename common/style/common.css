@@ -1,0 +1,374 @@
+/* -------------------------------
+共通
+--------------------------------- */
+body {
+  font-family:'メイリオ', 'Meiryo','MS ゴシック','Hiragino kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  color: #303030;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding-top: 80px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  color: #303030;
+  display: block;
+}
+a:hover {
+  opacity: .7;
+  transition: .25s;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+.btn {
+  display: inline-block;
+  width: 350px;
+  max-width: 100%;
+  padding: 5px 10px;
+  background-color: #192166;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-align: center;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #ffffff;
+  border-color: currentColor;
+  color: #192166;
+}
+
+.contents_title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+.contents_title_inner {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+  font-weight: 600;
+}
+.contents_title_inner::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateX(-50%);
+}
+
+
+/* -----------------------------
+ヘッダー
+------------------------------- */
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  border: 1px solid #b7b7b7;
+}
+.header_left {
+  width: 30%;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: .25s;
+}
+.header_left.flex {
+  justify-content: start;
+}
+.header_title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.header_right {
+  width: 70%;
+}
+.header_nav.flex {
+  justify-content: end;
+}
+.header_nav {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.header_list {
+  margin-right: 15px;
+}
+.header_list a {
+  transition: .25s;
+}
+.gradation {
+  width: 210px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #192166,#0278C1);
+  padding: 10px 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.large_text {
+  font-size: 1.25rem;
+}
+.global-nav {
+  display: none;
+}
+/* -----------------------------
+お問い合わせ
+--------------------------------*/
+#contact {
+  padding: 60px 0;
+  background-color: #F5F6F9;
+}
+.contact_text {
+  margin: 60px 0 40px;
+  text-align: center;
+  font-size: 1rem;
+}
+.contact_btn {
+  display: block;
+  margin: 0 auto;
+}
+/* ----------------------------
+フッター
+------------------------------ */
+.footer {
+  background-color: #192166;
+  color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+}
+.footer small {
+  width: 40%;
+  font-size: 0.875rem;
+}
+.footer_nav {
+  width: 60%;
+}
+.footer .flex {
+  justify-content: end;
+}
+.footer_list {
+  margin-right: 10px;
+}
+.footer a {
+  color: #ffffff;
+  transition: .25s;
+}
+
+/* --------------------------------
+下層ページトップ
+--------------------------------- */
+.top_wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: url(../img/sakurajima300px.png) center / cover;
+}
+.page_title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+
+/* ---------------------------
+タブレット用レスポンシブ 
+-----------------------------*/
+@media screen and (max-width: 1024px) {
+
+  /* -------------------------
+  共通 
+  ---------------------------*/
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* -------------------------
+  ヘッダー
+  -------------------------- */
+  .header_left {
+    width: 80%;
+  }
+  .header_right {
+    display: none;
+  }
+
+  /*--------------------------
+  ハンバーガー 
+  ---------------------------*/
+
+  .global-nav {
+    display: block;
+    position: fixed;
+    right: -80%;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    padding-top: 40px;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto; 
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+  }
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+  .global-nav__list:first-child {
+    margin-top: 20px;
+  }
+  .global-nav__item {
+    text-align: center;
+    padding: 0 14px;
+  }
+  .global-nav__item a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  }
+  .global-nav__item a:hover {
+    background-color: #eee;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    transition: all .6s;
+  }
+  .hamburger__line--1 {
+    top: 5px;
+  }
+  .hamburger__line--2 {
+    top: 15px;
+  }
+  .hamburger__line--3 {
+    top: 25px;
+  }
+  .black-bg {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+
+}
+
+/*--------------------------
+SP用レスポンシブ 
+-----------------------------*/
+@media screen and (max-width: 767px) {
+  
+  /* -------------------------------
+  共有 
+  ----------------------------------*/
+  .wrapper {
+    width: 85%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .contents_title {
+    font-size: 1.5rem;
+  }
+  /* -----------------------------------
+  ヘッダー 
+  -------------------------------------*/
+  .logo {
+    width: 60px;
+    height: 32px;
+  }
+  .header_title {
+    font-size: 1.5rem;
+  }
+
+  /* -----------------------------------
+  フッター 
+  --------------------------------------*/
+  .footer {
+    text-align: center;
+  }
+  .footer .flex {
+    display: block;
+  }
+  .footer small {
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .footer_nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer_list {
+    margin: 0 0 5px;
+  }
+
+}

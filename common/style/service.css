@@ -1,0 +1,81 @@
+/* ---------------------------------------
+事業内容（下層ページ）
+------------------------------------------ */
+.service_page_contents {
+  margin-top: 80px;
+}
+.service_detail {
+  margin-bottom: 120px;
+}
+.service_detail:last-child {
+  margin-bottom: 150px;
+}
+.service_detail_image {
+  margin-right: 8%;
+  width: 450px;
+  height: 320px;
+}
+.service_detail_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverse .service_detail_image {
+  margin: 0 0 0 8%;
+}
+.service_detail_text .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+/* ---------------------------
+タブレット用レスポンシブ 
+-----------------------------*/
+@media screen and (max-width: 1024px) {
+  .service_detail_image {
+    margin-right: 8%;
+    width: 300px;
+    height: 220px;
+  }
+  .service_detail {
+    margin-bottom: 80px;
+  }
+  .service_detail:last-child {
+    margin-bottom: 120px;
+  }
+}
+
+
+/*--------------------------
+SP用レスポンシブ 
+-----------------------------*/
+@media screen and (max-width: 767px) {
+  .service_detail.flex {
+    display: block;
+  }
+  .service_detail {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    margin-bottom: 30px;
+  }
+  .service_detail:last-child {
+    margin-bottom: 50px;
+  }
+  .service_detail_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+  .reverse .service_detail_image {
+    margin: 0;
+  }
+  .service_detail_text {
+    padding: 12px;
+  }
+
+}

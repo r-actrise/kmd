@@ -1,0 +1,66 @@
+#contact_form {
+  width: 100%;
+  margin: 100px 0;
+}
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact_form_item:not(:first-child) {
+  margin-top: 20px;
+}
+.contact_form_item_name {
+  display: block;
+  font-weight: bold;
+}
+
+.contact_form_item_input {
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact_form_item_textarea {
+  font-size: 16px;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  resize: none;
+}
+
+.contact_form_item_required {
+  color: #cd0224;
+  margin-left: 5px;
+}
+.btn {
+  display: block;
+  margin: 60px auto 0;
+}
+
+/* thanksページ */
+.thanks_container {
+  width: 100%;
+  margin: 120px auto 0;
+  text-align: center;
+  height: 50vh;
+}
+.thanks_text {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_form {
+    width: 100%;
+  }
+  .thanks_text {
+    font-size: 1rem;
+  }
+}

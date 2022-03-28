@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./common/style/reset.css" />
+    <link rel="stylesheet" href="./common/style/common.css">
+    <link rel="stylesheet" href="./common/style/style.css" />
+    <title>九州機械開発 株式会社</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex">
+        <a class="header_left flex">
+          <img class="logo" src="./common/img/kmd_logo.png" alt="九州機械開発株式会社のロゴマーク" width="85px" height="40px" />
+          <h1 class="header_title">九州機械開発㍿</h1>
+        </a>
+        <nav class="header_right">
+          <ul class="header_nav flex">
+            <li class="header_list"><a href="#">ホーム</a></li>
+            <li class="header_list"><a href="./service.html">事業内容</a></li>
+            <li class="header_list"><a href="./news.html">新着情報</a></li>
+            <li class="header_list"><a href="./company.html">会社概要</a></li>
+            <li class="header_list"><a href="./contact.html">お問い合わせ</a></li>
+            <li class="header_list">
+              <button class="gradation" onclick="location.href='./repair.html'">
+                <span class="large_text">特自検</span>はこちらから
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item"><a href="#">ホーム</a></li>
+            <li class="global-nav__item"><a href="./service.html">事業内容</a></li>
+            <li class="global-nav__item"><a href="./news.html">新着情報</a></li>
+            <li class="global-nav__item"><a href="./company.html">会社概要</a></li>
+            <li class="global-nav__item"><a href="./repair.html">特定自主検査</a></li>
+            <li class="global-nav__item"><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <div class="eye_catch">
+          <img
+            class="eye_catch_img"
+            src="./common/img/sakurajima_top_image.png"
+            alt=""
+          />
+          <section id="kmd_feeling">
+            <div class="wrapper">
+              <h2 class="feeling_title">九州機械開発の想い</h2>
+              <p class="feeling_text">
+                九州機械開発株式会社は鹿児島県において、ボブキャット販売代理店・指定サービス工場として主に、スキッドステアローダーの販売やメンテナンス修理、特定自主検査及び各種点検を行っております。機械を止めないこと、最大限のパフォーマンスを生むことを最重視し、鹿児島県で事業を営む方々の力になりたいと思っております。資格所有者のみ可能な特定自主検査も行っており、事業に欠かせない機械のメンテナンスを行うことで、皆様に安心して事業を営んでいただきたいと思っております。
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="wrapper">
+          <section id="service">
+            <h2 class="contents_title"><span class="contents_title_inner">事業内容</span></h2>
+            <div class="service_contents">
+              <div class="flex">
+                <div class="card">
+                  <figure class="card_img_wrapper">
+                    <img src="./common/img/service_bobcat.png" alt="建設機械の写真" class="card_img">
+                  </figure>
+                  <div class="card_body">
+                    <h3 class="card_title">建設機械販売</h3>
+                    <p class="card_text">新車・中古車のホイールローダーやスキッドステアローダー、フォークリフトや各種アタッチメントなどの販売を行っております。</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <figure class="card_img_wrapper">
+                    <img src="./common/img/service_repair.png" alt="" class="card_img">
+                  </figure>
+                  <div class="card_body">
+                    <h3 class="card_title">建機メンテナンス修理</h3>
+                    <p class="card_text">建設機械サービス・メンテナンスにおいて長年の技術の蓄積があり、現地へ出張にて確かな提案とサービスを保証します。</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <figure class="card_img_wrapper">
+                    <img src="./common/img/service_test.png" alt="" class="card_img">
+                  </figure>
+                  <div class="card_body">
+                    <h3 class="card_title">特定自主検査・各種点検</h3>
+                    <p class="card_text">経験豊富なプロの整備士がお客様の経費削減に貢献させて頂くため、また安心して機械をお使い頂くために、万全の技術と設備で大切な車輌を保守し、点検・整備・検査を行っています。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn view_detail" type="button" onclick="location.href='./service.html'">
+              詳しく見る
+            </button>
+          </section>
+          <section id="news">
+            <h2 class="contents_title"><span class="contents_title_inner">新着情報</span></h2>
+            <ul class="news_lists">
+              <li class="news_list">
+                <a class="news_list_inner" href="./news.html">
+                  <time class="date" datetime="2022-04-01">[ 2022.04.01 ]</time>
+                  <p class="new most_new">ホームページを開設しました。</p>
+                </a>
+              </li>
+              <li class="news_list">
+                <a class="news_list_inner" href="./news.html">
+                  <time class="date" datetime="2022-04-01">[ 2022.04.01 ]</time>
+                  <p class="new">ホームページを開設しました。</p>
+                </a>
+              </li>
+              <li class="news_list">
+                <a class="news_list_inner" href="./news.html">
+                  <time class="date" datetime="2022-04-01">[ 2022.04.01 ]</time>
+                  <p class="new">ホームページを開設しました。</p>
+                </a>
+              </li>
+            </ul>
+            <button class="btn view_detail" type="button" onclick="location.href='./news.html'">
+              詳しく見る
+            </button>
+          </section>
+        </div>
+        <section id="company">
+          <div class="flex">
+            <a href="./company.html" class="company_contents">
+              <h2>会社概要</h2>
+            </a>
+            <a href="./contact.html"  class="quotation">
+              <h2>見積依頼</h2>
+            </a>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="wrapper">
+            <h2 class="contents_title"><span class="contents_title_inner">お問い合わせ</span></h2>
+            <p class="contact_text">
+              お仕事のご依頼やお見積もり等はお問い合わせにて承っております。
+            </p>
+            <button class="btn contact_btn" onclick="location.href='./contact.html'">お問い合わせ</button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="flex">
+          <small class="copy"
+            >&copy; Kyushu Machinery Development.</small
+          >
+          <ul class="footer_nav flex">
+            <li class="footer_list"><a href="#">ホーム</a></li>
+            <li class="footer_list"><a href="./service.html">事業内容</a></li>
+            <li class="footer_list"><a href="./news.html">新着情報</a></li>
+            <li class="footer_list"><a href="./company.html">会社概要</a></li>
+            <li class="footer_list"><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="common/js/main.js"></script>
+  </body>
+</html>
