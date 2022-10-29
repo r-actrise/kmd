@@ -1,0 +1,77 @@
+article .wrapper {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+#contact .wrapper {
+  padding-top: 0;
+}
+
+.tire_page_contents {
+  margin-bottom: 40px;
+}
+.tire_img_wrapper {
+  margin-right: 60px;
+  width: 50%;
+}
+.tire_img {
+  width: 100%;
+}
+.tire_text_wrapper {
+  width: 70%;
+  padding-top: 20px;
+}
+.tire_page_contents .flex {
+  align-items: flex-start;
+}
+.tire_contents_title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tire_contents_text {
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 1008px) {
+  .wrapper {
+    width: 80%;
+  }
+  .tire_page_contents {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+  .tire_page_contents .flex{
+    display: block;
+  }
+  .tire_img_wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tire_text_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+  }
+  .tire_contents_title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .wrapper {
+    width: 90%;
+  }
+  .tire_page_contents {
+    margin-bottom: 60px;
+  }
+  .tire_img_wrapper {
+    width: 100%;
+  }
+  .tire_text_wrapper {
+    width: 100%;
+  }
+  .tire_contents_title {
+    font-size: 18px;
+  }
+}

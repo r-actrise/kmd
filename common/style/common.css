@@ -157,11 +157,11 @@ a:hover {
   width: 100%;
 }
 .footer small {
-  width: 40%;
+  width: 30%;
   font-size: 0.875rem;
 }
 .footer_nav {
-  width: 60%;
+  width: 70%;
 }
 .footer .flex {
   justify-content: end;
@@ -196,7 +196,7 @@ a:hover {
 /* ---------------------------
 タブレット用レスポンシブ 
 -----------------------------*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1197px) {
 
   /* -------------------------
   共通 
@@ -319,6 +319,29 @@ a:hover {
     top: 20px;
   }
 
+  /* -----------------------------------
+  フッター 
+  --------------------------------------*/
+  .footer {
+    text-align: center;
+  }
+  .footer .flex {
+    display: block;
+  }
+  .footer small {
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .footer_nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer_list {
+    margin: 0 0 5px;
+  }
+
 }
 
 /*--------------------------
@@ -349,27 +372,6 @@ SP用レスポンシブ
     font-size: 1.5rem;
   }
 
-  /* -----------------------------------
-  フッター 
-  --------------------------------------*/
-  .footer {
-    text-align: center;
-  }
-  .footer .flex {
-    display: block;
-  }
-  .footer small {
-    width: 100%;
-    margin-bottom: 15px;
-    display: block;
-  }
-  .footer_nav {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .footer_list {
-    margin: 0 0 5px;
-  }
+  
 
 }
